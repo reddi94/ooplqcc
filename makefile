@@ -34,16 +34,10 @@ pull:
     --include "IsPrime1.c++"                \
     --include "IsPrime1.h"                  \
     --include "IsPrime2.c++"                \
-    --include "IsPrime2.h"                  \
     --include "Incr.c++"                    \
-    --include "Incr.h"                      \
-    --include "Equal.h"                     \
     --include "Equal.c++"                   \
-    --include "Copy.h"                      \
     --include "Copy.c++"                    \
-    --include "Fill.h"                      \
     --include "Fill.c++"                    \
-    --include "AllOf.h"                     \
     --include "AllOf.c++"                   \
     --exclude "*"                           \
     ../../../exercises/c++/ exercises
