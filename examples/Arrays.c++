@@ -11,6 +11,18 @@
 
 using namespace std;
 
+void f (int p[]) {
+//  assert(sizeof(p) == 8); // warning: sizeof on array function parameter will return size of 'int *' instead of 'int []'
+    ++p;
+    ++p[0];
+    ++*p;}
+
+void g (int* p) {
+    assert(sizeof(p) == 8);
+    ++p;
+    ++p[0];
+    ++*p;}
+
 struct A {
     int i;
 
@@ -111,9 +123,9 @@ int main () {
     fill(a, a + s, v);
     assert(count(a, a + s, v) == s);
     assert(a[1] == v);
-    f1(a);
+    f(a);
     assert(a[1] == v + 2);
-    f2(a);
+    g(a);
     assert(a[1] == v + 4);
     delete [] a;
     }

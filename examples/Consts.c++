@@ -30,7 +30,7 @@ int main () {
           int  i  = 2;
     const int  ci = 3;
           int* p;
-    p  = &i;
+    p = &i;
     ++*p;
     assert(i == 3);
 //  p = &ci;        // error: invalid conversion from 'const int*' to 'int*'

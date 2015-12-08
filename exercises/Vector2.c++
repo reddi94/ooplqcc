@@ -14,7 +14,7 @@
 using namespace std;
 using namespace testing;
 
-using std::rel_ops::operator!=;
+using rel_ops::operator!=;
 
 template <typename T>
 struct Vector_Fixture : Test {
