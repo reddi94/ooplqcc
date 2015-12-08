@@ -44,6 +44,7 @@ pull:
     --include "Fill.h"                      \
     --include "AllOf.h"                     \
     --include "Vector1.c++"                 \
+    --include "Vector2.c++"                 \
     --exclude "*"                           \
     ../../../exercises/c++/ exercises
 

@@ -23,18 +23,6 @@ struct B : A {
     string f () {
         return "B::f";}};
 
-void f1 (int p[]) {
-    assert(sizeof(p) == 8); // warning: sizeof on array function parameter will return size of 'int *' instead of 'int []' [-Wsizeof-array-argument]
-    ++p;
-    ++p[0];
-    ++*p;}
-
-void f2 (int* p) {
-    assert(sizeof(p) == 8);
-    ++p;
-    ++p[0];
-    ++*p;}
-
 int main () {
     cout << "Arrays.c++" << endl;
 
@@ -75,15 +63,6 @@ int main () {
     const int    a[s] = {};
     assert(sizeof(a) == 40);
     assert(a[0]      ==  0);
-    }
-
-    {
-    int a[] = {2, 3, 4};
-    assert(a[1] == 3);
-    f1(a);
-    assert(a[1] == 5);
-    f2(a);
-    assert(a[1] == 7);
     }
 
     {
@@ -175,11 +154,6 @@ int main () {
 //  B a[] = {A(), A(), A()};    // error: conversion from "A" to non-scalar type "B" requested
     A a[] = {B(), B(), B()};    // slice
     assert(a[1].f() == "A::f");
-    }
-
-    {
-//  int*    const a = new double[10]; // error: cannot convert 'double*' to 'int*    const' in initialization
-//  double* const a = new int[10];    // error: cannot convert 'int*'    to 'double* const' in initialization
     }
 
     {
