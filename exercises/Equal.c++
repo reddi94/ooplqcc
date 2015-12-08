@@ -14,9 +14,7 @@
 #include "Equal.h"
 
 using namespace std;
-
-using testing::TestWithParam;
-using testing::Values;
+using namespace testing;
 
 using Equal_List_Signature = function<bool (list<int>::const_iterator, list<int>::const_iterator, vector<int>::const_iterator)>;
 

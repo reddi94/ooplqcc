@@ -40,8 +40,10 @@ pull:
     --include "Equal.c++"                   \
     --include "Equal.h"                     \
     --include "Copy.c++"                    \
-    --include "Fill.c++"                    \
-    --include "AllOf.c++"                   \
+    --include "Copy.h"                      \
+    --include "Fill.h"                      \
+    --include "AllOf.h"                     \
+    --include "Vector1.c++"                 \
     --exclude "*"                           \
     ../../../exercises/c++/ exercises
 

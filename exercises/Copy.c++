@@ -16,9 +16,7 @@
 #include "Copy.h"
 
 using namespace std;
-
-using testing::TestWithParam;
-using testing::Values;
+using namespace testing;
 
 using Copy_List_Signature = function<vector<int>::iterator (list<int>::const_iterator, list<int>::const_iterator, vector<int>::iterator)>;
 
