@@ -34,8 +34,11 @@ pull:
     --include "IsPrime1.c++"                \
     --include "IsPrime1.h"                  \
     --include "IsPrime2.c++"                \
+    --include "IsPrime2.h"                  \
     --include "Incr.c++"                    \
+    --include "Incr.h"                      \
     --include "Equal.c++"                   \
+    --include "Equal.h"                     \
     --include "Copy.c++"                    \
     --include "Fill.c++"                    \
     --include "AllOf.c++"                   \
