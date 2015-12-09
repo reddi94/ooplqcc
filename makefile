@@ -28,6 +28,13 @@ pull:
     --include "Arguments.c++"               \
     --include "Consts.c++"                  \
     --include "Arrays.c++"                  \
+    --include "LocalVariables.c++"          \
+    --include "GlobalVariables.c++"         \
+    --include "ClassVariables.c++"          \
+    --include "InstanceVariables.c++"       \
+    --include "Methods.c++"                 \
+    --include "MethodOverriding1.c++"       \
+    --include "MethodOverriding2.c++"       \
     --exclude "*"                           \
     ../../../examples/c++/ examples
 	@rsync -r -t -u -v --delete             \
@@ -46,6 +53,13 @@ pull:
     --include "Vector1.c++"                 \
     --include "Vector1.h"                   \
     --include "Vector2.c++"                 \
+    --include "Shapes1.c++"                 \
+    --include "Shapes2.c++"                 \
+    --include "Shapes3.c++"                 \
+    --include "Handle1.c++"                 \
+    --include "Handle2.c++"                 \
+    --include "Handle3.c++"                 \
+    --include "SharedPtr.c++"               \
     --exclude "*"                           \
     ../../../exercises/c++/ exercises
 
