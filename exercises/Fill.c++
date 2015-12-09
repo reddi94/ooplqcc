@@ -13,9 +13,7 @@
 #include "Fill.h"
 
 using namespace std;
-
-using testing::TestWithParam;
-using testing::Values;
+using namespace testing;
 
 using Fill_List_Signature = function<void (list<int>::iterator, list<int>::iterator, const int&)>;
 

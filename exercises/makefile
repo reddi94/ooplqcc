@@ -5,7 +5,6 @@ FILES :=       \
     Equal      \
     Copy       \
     Fill       \
-    AllOf      \
     Vector1
 
 CXX        := g++-4.8

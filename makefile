@@ -41,9 +41,10 @@ pull:
     --include "Equal.h"                     \
     --include "Copy.c++"                    \
     --include "Copy.h"                      \
+    --include "Fill.c++"                    \
     --include "Fill.h"                      \
-    --include "AllOf.h"                     \
     --include "Vector1.c++"                 \
+    --include "Vector1.h"                   \
     --include "Vector2.c++"                 \
     --exclude "*"                           \
     ../../../exercises/c++/ exercises
