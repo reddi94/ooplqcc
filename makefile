@@ -53,6 +53,7 @@ pull:
     --include "Vector1.c++"                 \
     --include "Vector1.h"                   \
     --include "Vector2.c++"                 \
+    --include "Vector2.h"                   \
     --include "Shapes1.c++"                 \
     --include "Shapes2.c++"                 \
     --include "Shapes3.c++"                 \

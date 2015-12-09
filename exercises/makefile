@@ -5,7 +5,8 @@ FILES :=       \
     Equal      \
     Copy       \
     Fill       \
-    Vector1
+    Vector1    \
+    Vector2
 
 CXX        := g++-4.8
 CXXFLAGS   := -pedantic -std=c++11 -Wall
